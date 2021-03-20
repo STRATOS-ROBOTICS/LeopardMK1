@@ -7,7 +7,7 @@
 ## First, you'll have to download JDK from Oracle. Unfortunately it cannot be done
 ## via command line, only by visiting Oracle site, accepting license etc.
 ## The page is https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-## The file you need is jdk-8u241-linux-x64.tar.gz
+## The file you need is jdk-8u281-linux-x64.tar.gz
 ## Download it at put into the directory where you run this script from.
 ##
 
@@ -69,6 +69,10 @@ sudo apt install qtbase5-dev -y
 sleep 5
 
 ######QTCREATOR
+
+wget http://mirrors.ukfast.co.uk/sites/qt.io/archive/qt/5.12/5.12.8/qt-opensource-linux-x64-5.12.8.run
+
+
 chmod +x qt-opensource-linux-x64-5.12.8.run
 ./qt-opensource-linux-x64-5.12.8.run
 
