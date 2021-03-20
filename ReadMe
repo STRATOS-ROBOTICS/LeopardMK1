@@ -1,35 +1,38 @@
 
-installation guide
+INSTALLATION GUIDE
+------------------
 
-# Install Oracle JDK
-
-##
+# Download Oracle JDK
+---------------------
 ## First, you'll have to download JDK from Oracle. Unfortunately it cannot be done
 ## via command line, only by visiting Oracle site, accepting license etc.
 ## The page is https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 ## The file you need is jdk-8u281-linux-x64.tar.gz
-
-
 ## Download it at put into the directory where you run the script install.sh.
-##
 
 
-2-open terminal in folder
+PROCESS
+--------
+## Open terminal in folder
+## Type :
 
-3 type 
 sudo chmod +x install.sh
 
-4- type
+## Type :
+
 sudo ./install.sh
 
-###wait wait wait ... (1 hour for me with make (no -j4)
+## Wait wait wait ... (1 hour for me with make (no -j4)
 
-5-follow QT WIZARD installations process
+## Follow QT WIZARD installation process
 
-###waiting again...
+## Waiting again...
 
-6-the simulator run if ok
+## The simulator run if all good
 
-7-open another terminal and type :
-sudo ./user/MIT_Controller/mit_ctrl m s           
-###https://www.programmersought.com/article/96114805353/ 
+## Open another terminal and type :
+
+sudo ./user/MIT_Controller/mit_ctrl m s    
+
+## https://www.programmersought.com/article/96114805353/ 
+## 
