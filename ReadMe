@@ -1,9 +1,20 @@
 
-installation semi-offline
+installation guide
 
-1-extract the zip file in folder you want to install
+# Install Oracle JDK
 
-2-open terminal in the innstalation folder
+##
+## First, you'll have to download JDK from Oracle. Unfortunately it cannot be done
+## via command line, only by visiting Oracle site, accepting license etc.
+## The page is https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+## The file you need is jdk-8u281-linux-x64.tar.gz
+
+
+## Download it at put into the directory where you run the script install.sh.
+##
+
+
+2-open terminal in folder
 
 3 type 
 sudo chmod +x install.sh
@@ -11,4 +22,8 @@ sudo chmod +x install.sh
 4- type
 sudo ./install.sh
 
-5-
+5-follow QT WIZARD installations process
+
+6-the simulator run if ok
+
+7-open another terminal
