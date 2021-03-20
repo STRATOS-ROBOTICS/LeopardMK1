@@ -22,8 +22,14 @@ sudo chmod +x install.sh
 4- type
 sudo ./install.sh
 
+###wait wait wait ... (1 hour for me with make (no -j4)
+
 5-follow QT WIZARD installations process
+
+###waiting again...
 
 6-the simulator run if ok
 
-7-open another terminal
+7-open another terminal and type :
+sudo ./user/MIT_Controller/mit_ctrl m s           
+###https://www.programmersought.com/article/96114805353/ 
