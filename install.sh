@@ -131,12 +131,6 @@ cd ../..
 sleep 5
 
 
-
-
-
-
-
-
 #build 
 cd scripts # for now, you must actually go into this folder
 ./make_types.sh # you may see an error like `rm: cannot remove...` but this is okay
@@ -144,32 +138,24 @@ cd ..
 sudo mkdir build
 sudo chmod -R 777 build
 
-
-
-sed -i '5 i set(Qt5Core_DIR /Qt5.12.8/5.12.8/gcc_64/lib/cmake/Qt5Core)' sim/CMakeLists.txt
-
+#fix issue4
+sed -i '5 i set(Qt5Core_DIR /Qt5.12.8/5.12.8/gcc_64/lib/cmake/Qt5Core)' sim/CMakeLists.txt   
 sed -i '6 i set(Qt5Widgets_DIR /Qt5.12.8/5.12.8/gcc_64/lib/cmake/Qt5Widgets)' sim/CMakeLists.txt
-
 sed -i '7 i set(Qt5Gamepad_DIR /Qt5.12.8/5.12.8/gcc_64/lib/cmake/Qt5Gamepad)' sim/CMakeLists.txt
 
 sleep 5
 
-cd build
-
-
-
-
-
 
 ###finally
+cd build
 sudo cmake .. # No warnings anymore
-#####SET DIRECTORY FOR CMAKE AND QT5
 
 
 sleep 5
 
-sudo make ### # or sudo make -j4 for better spped but need 8go or ram
+sudo make ### # or sudo make -j4 for better spped but need  ramsss
 sleep 10 
+
 sudo ldconfig -v ##### for error while loading shared libraries: liblcm.so.1: cannot open shared object file: No such file or directory
 sleep 5
 
